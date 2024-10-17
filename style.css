@@ -59,7 +59,7 @@ h2 {
 
 .container {
   width: 85%;
-  max-width: var(--max-container-width);
+  max-width: calc(var(--max-container-width) - 20rem);
 
   padding-block: 1rem;
   padding-inline: .3rem;
@@ -125,7 +125,7 @@ main {
   box-shadow: 0 .2rem 1rem var(--grayish-blue);
 
   min-width: 33%;
-  max-width: 30rem;
+  max-width: 23.5rem;
 }
 
 .card.top-line--cyan {
@@ -168,6 +168,8 @@ main {
 
     align-items: center;
     justify-content: space-between;
+
+    max-width: var(--max-container-width);
   }
   .card:first-of-type {
     grid-row: span 2;
